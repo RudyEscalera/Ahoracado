@@ -26,18 +26,20 @@ public class TestPistas {
 	}
 	@Test
 	public void mostrarCantidadPistas(){
-		int pistasDisponibles=2;
-		int pistasUsadas=2;
-		assertEquals(true,mostrarPistas(pistasUsadas,pistasUsadas));
+		String mensaje="Cantidad de pistas diponibles:"+7;
+		assertEquals(mensaje,"Cantidad de pistas diponibles:"+7);
 	}
-	public Boolean mostrarPistas(int a,int b){
-		if(a==b){
-			return true;
-		}
+	@Test
+	public void mostrarpistaIncrementada()
+	{
+		int auxiliarpistas=6;
+		String mensaje="Cantidad de pistas diponibles:"+7;
+		assertEquals(mensaje,"Cantidad de pistas diponibles:"+incrementarpista(auxiliarpistas));
+	}
+	private int incrementarpista(int auxiliarpistas) {
 		
-		else
-			return false;
-		
+		// TODO Auto-generated method stub
+		return auxiliarpistas+1;
 	}
 	
 
